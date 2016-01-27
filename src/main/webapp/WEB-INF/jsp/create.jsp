@@ -3,12 +3,13 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
 <center>
+
     <p style="text-align:center;"><span style="font-family:Garamond;font-size:22px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;color:#993399;">~Cat Editor~
     </span>
     </p>
     <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_loo2kzSMuL1qhh19q.gif">
+
 </center>
 <p></p>
 <center>
@@ -22,22 +23,12 @@
         .tg .tg-5919{background-color:#D2E4FC;font-size:16px;font-family:"Trebuchet MS", Helvetica, sans-serif !important;;vertical-align:top}
         .tg .tg-d7nh{font-size:16px;font-family:"Trebuchet MS", Helvetica, sans-serif !important;;vertical-align:top}
         .tg .tg-nce2{background-color:#D2E4FC;font-size:16px;font-family:"Trebuchet MS", Helvetica, sans-serif !important;;text-align:right;vertical-align:top}
-        .delete {
-            outline: none;
-            border: none;
-            background-color: rgba(255,255,255,0);
-            background-image: url("http://www.free-icons-download.net/images/play-play-button-icon-28711.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 25px;
-            height: 25px;
-        }
     </style>
 
-    <head></head>
-    <p></p>
+<p></p>
 
-    <body background="https://31.media.tumblr.com/31e4e49d16eeccbb6bb0953e4575528c/tumblr_n6t4bk2usP1snc5kxo4_r1_500.gif">
+<body background="https://31.media.tumblr.com/31e4e49d16eeccbb6bb0953e4575528c/tumblr_n6t4bk2usP1snc5kxo4_r1_500.gif">
+
     <table class="tg">
         <tr>
             <th class="tg-au1h" colspan="3">Cats</th>
@@ -48,13 +39,12 @@
             <td class="tg-5919">Fluffy Rating</td>
         </tr>
         <c:forEach items = "${CATS.content}" var = "cat">
-            <tr>
-                <td class="tg-d7nh">${cat.id}</td>
-                <td class="tg-d7nh">${cat.catName}</td>
-                <td class="tg-jnuu">${cat.fluffyRating}</td>
-            </tr>
+        <tr>
+            <td class="tg-d7nh">${cat.id}</td>
+            <td class="tg-d7nh">${cat.catName}</td>
+            <td class="tg-jnuu">${cat.fluffyRating}</td>
+        </tr>
         </c:forEach>
-
     </table>
 
     <c:forEach var="i" begin="1" end="${CATS.totalPages}">
@@ -68,7 +58,7 @@
     <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_loo2i11Znd1qhh19q.gif">
     <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_loo2jvNXvU1qhh19q.gif">
 
-    <p></p>
+<p></p>
 
     <table>
 
@@ -92,4 +82,7 @@
             </table>
         </form>
     </table>
+
+</body>
+</center>
 </html>

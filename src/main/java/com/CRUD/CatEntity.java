@@ -19,11 +19,24 @@ public class CatEntity {
 			private String catName;
 			@Column(name = "fluffy_rating", nullable = false, insertable = true, updatable = true)
 			private String fluffyRating;
+			@Column(name = "image", nullable = false, insertable = true, updatable = true)
+			private byte[] image;
 
-			public CatEntity(String catName, String fluffyRating) {
+	public byte[] getImage() {
+		return image;
+	}
+
+	public void setImage(byte[] image) {
+		this.image = image;
+	}
+
+
+	public CatEntity(String catName, String fluffyRating) {
 				this.catName = catName;
 				this.fluffyRating = fluffyRating;
 			}
+
+
 
 			public long getId() {return id;}
 
@@ -43,12 +56,13 @@ public class CatEntity {
 				this.fluffyRating = fluffyRating;
 			}
 
+
 			protected CatEntity(){}
 
 			@Override
 			public String toString() {
 				return String.format(
-						"Cat[id=%d, catName='%s', fluffyRating='%s']",
-						id, catName, fluffyRating);
+						"Cat[catName='%s']",
+						catName);
 			}
 }

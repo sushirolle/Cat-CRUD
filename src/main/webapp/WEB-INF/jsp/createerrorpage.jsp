@@ -3,24 +3,24 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<center>
 <body background="https://31.media.tumblr.com/31e4e49d16eeccbb6bb0953e4575528c/tumblr_n6t4bk2usP1snc5kxo4_r1_500.gif">
+
 <center>
+
     <p style="text-align:center;"><span style="font-family:Garamond;font-size:22px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;color:#993399;">~Cat Editor~
     </span>
     </p>
     <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_loo2kzSMuL1qhh19q.gif">
-</center>
-<p></p>
-<body>
 
+</center>
+
+<p></p>
+<center>
 
 
     <img class="centerImage" src="http://i.imgur.com/9R7RDmc.gif">
 
-
-
-    <p></p>
+<p></p>
 
     <table>
 
@@ -43,6 +43,9 @@
                 </tr>
             </table>
         </form>
+
     </table>
+
 </center>
+</body>
 </html>

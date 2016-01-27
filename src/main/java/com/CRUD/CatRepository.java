@@ -14,4 +14,6 @@ public interface CatRepository extends JpaRepository<CatEntity, Long> {
 
 	List<CatEntity> findByCatName(String catName);
 	Page findAll(Pageable pageable);
+
+
 }
