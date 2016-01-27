@@ -157,7 +157,7 @@
             <button type="submit" class="image" ></button>
         </form>
                 </td>
-                <td class="tg-jnuu"><img src="/CRUD/imageDisplay?id=${cat.id}"/></td>
+                <td class="tg-jnuu"><img src="/CRUD/imageDisplay?id=${cat.id}" onerror="this.style.display='none'"/></td>
             </tr>
     </c:forEach>
                 <td class="tg-5919"><a href="/CRUD/create.html">Add A Cat</a></td>

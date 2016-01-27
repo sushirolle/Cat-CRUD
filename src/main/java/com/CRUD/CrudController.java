@@ -161,13 +161,11 @@ CatRepository catRepository;
 		public void showImage(@RequestParam("id") Long id, HttpServletResponse response,HttpServletRequest request)
 		throws ServletException, IOException {
 
-
 			CatEntity cat = catRepository.findOne(id);
 			response.setContentType("image/jpeg, image/jpg, image/png, image/gif");
-			response.getOutputStream().write(cat.getImage());
-
-
+			response.getOutputStream().write(cat.getImage() == null ? new byte[0] : cat.getImage());
 			response.getOutputStream().close();
+
 
 	}
 
@@ -219,7 +217,7 @@ CatRepository catRepository;
 	public String searchname(@RequestParam String catName, ModelMap cat)
 	{
 		List<CatEntity> list = catRepository.findAll();
-		List<CatEntity> kitties = list.stream().filter(x -> x.getCatName().contains(catName)).collect(Collectors.toList());
+		List<CatEntity> kitties = list.stream().filter(x -> x.getCatName().toUpperCase().contains(catName.toUpperCase())).collect(Collectors.toList());
 		cat.put("kitties", kitties);
 		return "index";
 
