@@ -10,7 +10,8 @@
     <p style="text-align:center;"><span style="font-family:Garamond;font-size:22px;font-style:normal;font-weight:normal;text-decoration:none;text-transform:none;color:#993399;">~Cat Editor~
     </span>
     </p>
-    <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_loo2kzSMuL1qhh19q.gif">
+
+    <img src="http://i.imgur.com/9R7RDmc.gif">
 </center>
 
 <p></p>
@@ -62,7 +63,7 @@
             background-repeat: no-repeat;
             width: 28px;
             height: 35px;
-         }
+        }
         .update{
             outline: none;
             border: none;
@@ -71,10 +72,10 @@
             background-repeat: no-repeat;
             width: 50px;
             height: 50px;
-          }
+        }
     </style>
 
-<p></p>
+    <p></p>
 
 
     <table class="tg">
@@ -88,23 +89,23 @@
             <td class="tg-5919">Delete</td>
             <td class="tg-5919">Update This Cat</td>
         </tr>
-    <c:forEach items = "${CATS.content}" var = "cat">
-        <tr>
-            <td class="tg-d7nh">${cat.id}</td>
-            <td class="tg-d7nh">${cat.catName}</td>
-            <td class="tg-jnuu">${cat.fluffyRating}</td>
-            <td>
-            <form action="/CRUD/delete/${cat.id}" method="post">
-                <button name="Delete" type="submit" class="delete" ></button>
-            </form>
-            </td>
-            <td>
-                <form action="/CRUD/update/${cat.id}" method="get">
-                    <button type="submit" class="update" ></button>
-                </form>
-            </td>
-        </tr>
-    </c:forEach>
+        <c:forEach items = "${CATS.content}" var = "cat">
+            <tr>
+                <td class="tg-d7nh">${cat.id}</td>
+                <td class="tg-d7nh">${cat.catName}</td>
+                <td class="tg-jnuu">${cat.fluffyRating}</td>
+                <td>
+                    <form action="/CRUD/delete/${cat.id}" method="post">
+                        <button name="Delete" type="submit" class="delete" ></button>
+                    </form>
+                </td>
+                <td>
+                    <form action="/CRUD/update/${cat.id}" method="get">
+                        <button type="submit" class="update" ></button>
+                    </form>
+                </td>
+            </tr>
+        </c:forEach>
 
         <td class="tg-5919"><a href="/CRUD/create.html">Add A Cat</a></td>
 
@@ -112,26 +113,12 @@
     </table>
 
     <c:forEach var="i" begin="1" end="${CATS.totalPages}">
-    <div style="display: inline-block;"> <a href="/CRUD/?page=${i-1}"><c:out value="${i}"/></a></div>
+        <div style="display: inline-block;"> <a href="/CRUD/?page=${i-1}"><c:out value="${i}"/></a></div>
     </c:forEach>
 
 
 
-<p></p>
-    <img style="-webkit-user-select: none" src="http://33.media.tumblr.com/a6f8327c12d9de6e7833100436793561/tumblr_inline_njhmd9jJpr1ry72eo.png">
-    <img style="-webkit-user-select: none" src="http://33.media.tumblr.com/297479eefd1dfd15bb78cc0d6fc71c87/tumblr_inline_njhmd9661Q1ry72eo.png">
-<p></p>
 
-
-    <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_lodwzn385n1qdsjn2.gif">
-    <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_lodwzjH6jZ1qdsjn2.gif">
-    <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_lodwzbZCxB1qdsjn2.gif">
-    <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_loo2i11Znd1qhh19q.gif">
-    <img style="-webkit-user-select: none" src="http://55.media.tumblr.com/tumblr_loo2jvNXvU1qhh19q.gif">
-
-<p></p>
-
-    <img style="-webkit-user-select: none" src="http://57.media.tumblr.com/a636bef299cfb27878bbe7a1f0d064fa/tumblr_mtkic2wGKx1si30aao1_400.gif">
 
 
 </center>
